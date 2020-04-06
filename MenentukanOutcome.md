@@ -1,0 +1,2 @@
+Outcome dari Meme Generator :
+
