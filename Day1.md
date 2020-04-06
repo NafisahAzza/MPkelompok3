@@ -1,2 +1,0 @@
-Permulaan
-menentukan user
