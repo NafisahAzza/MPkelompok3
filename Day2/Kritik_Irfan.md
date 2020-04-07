@@ -2,7 +2,7 @@
 . Fitur save, share dan publish dan search lebih diperinci lagi pada bagian mana di web
 . Fitur delete kurang rinci pada bagian mana
 
-- Azza
+- Nafisah
 . Fitur preview pada edit mungkin tidak diperlukan karena akan diubah secara real-time
 
 - Erlyn
