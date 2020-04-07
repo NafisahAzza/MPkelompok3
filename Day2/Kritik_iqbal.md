@@ -6,7 +6,7 @@ terlalu sedikit kontennya
 2. Mindmap Erlyn :
 Ada beberapa poin penting yang belum dituliskan
 
-3.Mindmap azza :
+3.Mindmap Nafisah :
 terlalu menjelaskan tentang fitur
 hal lain selain fitur banyak yang tidak ditulis
 
@@ -21,7 +21,7 @@ tidak ada penjelasan tentang UI nya
 6. Crazy eight erlyn :
 masih ada sedikit misscom tentang pengertian meme generator dimana hanya menuliskan teks bukan menggambar
 
-7. crazy eight azza :
+7. crazy eight Nafisah :
 gambar sedikit kurang jelas
 tidak ada penjelasan gambar
 
