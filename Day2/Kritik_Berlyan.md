@@ -15,12 +15,12 @@ Kritik crazyeight Irfan :
 2. kurang dijabarkan bagaimana menyimpan atau mendownload
 3. apakah bisa dishare atau tidak
 
-Kritik mindmap azza :
+Kritik mindmap nafisah :
 1. hanya berisi tentang cara mengakses
 2. kurang penjaabaran tentang apa yang diinginkan dari meme generator
 3. kurang penjabaran untuk bagaimana mengakses dan siapa yg boleh menggunakan
 
-kritik crazyeight azza :
+kritik crazyeight nafisah :
 1. cara login bagaimana
 2. belum dijelaskan cara mendownload atau membagikan ke sosmed yang lain
 3. untuk melihat meme dari user sebelumnya bagaimana
