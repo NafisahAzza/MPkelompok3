@@ -2,6 +2,7 @@ Kritik mindmap iqbal :
 1. Kurang dijabarkan tentang apa yang harus dilakukan untuk merealisasikan meme generator tersebut selain membuat platformnya
 2. karena ini berbasis web kayanya tidak perlu dibedakan untuk user pengguna android ataupun ios
 3. dijabarkan lagi rencana atau planning isi dari meme generatornya
+
 Kritik crazyeight iqbal :
 1. ditambahkan lagi fitur edit seperti apa
 
