@@ -1,2 +1,398 @@
-<html>
-</html>
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+a=new XMLHttpRequest();
+a.onload=function(){I=JSON.parse(this.responseText);if(window.initData)initData();};
+a.open('get','/ajax_get_le_data?pro_data=1',true);
+a.send();
+</script>
+<script>
+var _gaq=_gaq||[];
+var gaon=1;
+_gaq.push(['_setAccount','UA-20041150-5']);
+_gaq.push(['_setDomainName','imgflip.com']);
+_gaq.push(['_setSiteSpeedSampleRate',5]);
+_gaq.push(['_trackPageview']);
+(function(d){
+var ga=d.createElement('script');ga.type='text/javascript';ga.async=true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);
+})(document);
+version=1036;
+spriteNum=2860;
+IMAGE_DOMAIN='//i.imgflip.com/';
+STATIC_DOMAIN='//s.imgflip.com/';
+mm=0;
+</script>
+<style>
+.i-banner{width:320px;height:50px;display:block;margin:0 auto;overflow:hidden;}
+@media(min-width:500px){.i-banner{width:468px;height:60px;}}
+@media(min-width:760px){.i-banner{width:728px;height:90px;}}
+</style>
+<link rel="icon" href="/favicon.ico?b" />
+<link rel="icon" sizes="128x128" href="/apple-touch-icon.png" />
+<link rel='stylesheet' href='//s.imgflip.com/v1036/style.css' media='screen' />
+<link rel='stylesheet' href='//s.imgflip.com/v1036/m.css' media='screen' />
+<title>Source code Meme Generator - Imgflip</title>
+<meta name="description" content="Insanely fast, mobile-friendly meme generator. Make Source code memes or upload your own images to make custom memes" />
+<meta name="keywords" content="meme generator, meme maker, meme, caption, image macro" />
+<style>
+#memewrap div.im{background-image:url(//s.imgflip.com/ms2860.jpg)}</style>
+</head>
+<body class="">
+<div id="panel-back">
+<div id="panel">
+<div id="nt-nots-mini" class="nt-nots"></div>
+<a class="nav" href="/">
+<img id="logo" alt="Imgflip Logo" src="/imgflip_white_96.png">
+</a>
+<div class="nav menu-wrap" id="nav-make">
+<div id="nav-make-inner" class="menu-btn nosel down-arrow">Create</div>
+<div id="make-list" class="menu">
+<a class="make-item" href="/memegenerator" title="Meme Generator">
+<svg width=30 height=30 class="make-icon make-icon-meme">
+<g transform="scale(.3)">
+<path d="M 20 0 l 30 50 l -50 -10 l 0 -40 z" />
+<path d="M 60 0 l 40 0 l -50 50 z" />
+<path d="M 100 60 l 0 40 l -20 0 l -30 -50 z" />
+<path d="M 40 100 l -40 0 l 50 -50 z" />
+</g>
+</svg>
+Caption a Meme or Image
+</a>
+<a class="make-item" href="/gif-maker" title="Animated GIF Maker (from video, youtube, images, etc.)">
+<svg class="make-icon make-icon-gif">
+<g transform="scale(.3)">
+<rect width=66 height=66 x=31 y=3 />
+<rect width=66 height=66 x=17 y=17 />
+<rect width=66 height=66 x=3 y=31 />
+<path d="M 24 50 l 25 14 l -25 14 z" />
+</g>
+</svg>
+Make a GIF
+</a>
+<a class="make-item" href="/chart-maker" title="Chart Maker">
+<svg class="make-icon make-icon-pie">
+<g transform="scale(.3)">
+<circle r=25 cx=50 cy=50 />
+</g>
+</svg>
+Make a Chart
+</a>
+<a class="make-item" href="/demotivational-maker" title="Demotivational Poster Maker">
+<div class="make-icon make-icon-demo"><div class="make-icon-demo-inner"></div></div>
+Make a Demotivational
+</a>
+</div>
+</div>
+<div class="nav img-flip" id="panel-flip">
+<svg width=40 height=20 class="rand-arrows">
+<g transform="scale(.3)">
+<path class="line" fill="none" stroke="#aaa" stroke-width="8" stroke-linejoin="round" d="M 22 15 l 30 0 l 10 10 m 10 10 l 10 10 l 20 0" />
+<path class="arrow" fill="#aaa" d="M 102 45 l 0 -10 l 20 10 l -20 10 l 0 -10" />
+<path class="line" fill="none" stroke="#aaa" stroke-width="8" stroke-linejoin="round" d="M 22 45 l 30 0 l 30 -30 l 20 0" />
+<path class="arrow" fill="#aaa" d="M 102 15 l 0 -10 l 20 10 l -20 10 l 0 -10" />
+</g>
+</svg>
+<div class="navTip">Flip Through Images</div>
+</div>
+<div class="nav menu-wrap" id="u-menu-wrap">
+<div id="u-menu-btn" class="menu-btn nosel down-arrow">
+<span id="u-long"></span>
+</div>
+<div id="u-menu" class="menu"></div>
+</div>
+<svg width=30 height=30 id="panel-search-icon" class="s-icon">
+<g transform="scale(.3)">
+<path d="M 15 85 l 35 -35" />
+<circle r=20 cx=64 cy=36 />
+</g>
+</svg>
+<div class="clear"></div>
+</div>
+<div id="panel-search-back" class="hidden">
+<div id="panel-search">
+<form class="s-form" action="/search" method="get">
+<input id="panel-search-input" name="q" type="text" placeholder="Search memes, gifs, tags, users" autocomplete="off" autocapitalize="off" autocorrect="off" />
+</form>
+<div class="s-submit l but">
+<svg width=30 height=30 class="s-icon">
+<g transform="scale(.3)">
+<path d="M 15 85 l 35 -35" />
+<circle r=20 cx=64 cy=36 />
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<div style="font:400 2px/2px impact,impac;opacity:0;position:fixed;">s</div>
+<div id="page" class="m">
+<div class="head clearfix">
+<h1>Source code Meme Generator</h1>
+<h2>The Fastest Meme Generator on the Planet. Easily add text to images or memes.</h2>
+</div>
+<div class="m mm-main ibox clearfix">
+<div id="mm-preview-outer">
+<div class="mm-draw-panel clearfix"></div>
+<div class="mm-spacing-settings">
+<div class="select">
+<select class="mm-spacing-type">
+<option value="">No Spacing</option>
+<option value="top_bottom">Top and Bottom</option>
+<option value="top">Top</option>
+<option value="bottom">Bottom</option>
+</select>
+</div>
+<div class="select">
+<select class="mm-spacing-color">
+<option value="auto">Auto Color</option>
+<option value="white">White</option>
+<option value="black">Black</option>
+</select>
+</div>
+<div class="select">
+<select class="mm-spacing-size">
+<option value="15">15%</option>
+<option value="25" selected>25%</option>
+<option value="50">50%</option>
+<option value="100">100%</option>
+</select>
+</div>
+</div>
+<div class="mm-preview">
+<canvas class="mm-canv"></canvas>
+<img class="mm-img shadow" alt="meme generator image preview" />
+</div>
+</div
+
+	><div id="mm-settings">
+<div id="mm-show-upload" class="l but">Upload your own image</div>
+<input id="mm-search" type="text" placeholder="Search all memes" />
+<div id="mm-tabs" class="clearfix">
+<div id="memetab" class="mm-tab" title="Top Memes This Month">Popular</div>
+<div id="mytab" class="mm-tab" title="My Saved Templates">My</div>
+<h4 id="mm-meme-title"></h4>
+<div id="mm-search-dropdown" class="mm-search-results mm-hidden">
+<div class="mm-search-loading">loading...</div>
+<table class="mm-search-results-table"></table>
+</div>
+</div>
+<div id="sel">
+<div id="mygen"></div>
+<div id="memewrap"><img class='im um' src='//i.imgflip.com/2/3liaf7.jpg' data-key='U' alt='Source code' title='Caption "Source code"' /><div class='im' style='background-position:0px 0' data-key='0' alt='Drake Hotline Bling Meme' title='Make Drake Hotline Bling Meme'></div><div class='im' style='background-position:-50px 0' data-key='1' alt='Distracted Boyfriend Meme' title='Make Distracted Boyfriend Meme'></div><div class='im' style='background-position:-100px 0' data-key='2' alt='Two Buttons Meme' title='Make Two Buttons Meme'></div><div class='im' style='background-position:-150px 0' data-key='3' alt='Change My Mind Meme' title='Make Change My Mind Meme'></div><div class='im' style='background-position:-200px 0' data-key='4' alt='Mocking Spongebob Meme' title='Make Mocking Spongebob Meme'></div><div class='im' style='background-position:-250px 0' data-key='5' alt='Left Exit 12 Off Ramp Meme' title='Make Left Exit 12 Off Ramp Meme'></div><div class='im' style='background-position:-300px 0' data-key='6' alt='Batman Slapping Robin Meme' title='Make Batman Slapping Robin Meme'></div><div class='im' style='background-position:-350px 0' data-key='7' alt='Woman Yelling At Cat Meme' title='Make Woman Yelling At Cat Meme'></div><div class='im' style='background-position:-400px 0' data-key='8' alt='Running Away Balloon Meme' title='Make Running Away Balloon Meme'></div><div class='im' style='background-position:-450px 0' data-key='9' alt='UNO Draw 25 Cards Meme' title='Make UNO Draw 25 Cards Meme'></div><div class='im' style='background-position:-500px 0' data-key='10' alt='Expanding Brain Meme' title='Make Expanding Brain Meme'></div><div class='im' style='background-position:-550px 0' data-key='11' alt='Roll Safe Think About It Meme' title='Make Roll Safe Think About It Meme'></div><div class='im' style='background-position:-600px 0' data-key='12' alt='Bernie I Am Once Again Asking For Your Support Meme' title='Make Bernie I Am Once Again Asking For Your Support Meme'></div><div class='im' style='background-position:-650px 0' data-key='13' alt='Boardroom Meeting Suggestion Meme' title='Make Boardroom Meeting Suggestion Meme'></div><div class='im' style='background-position:-700px 0' data-key='14' alt='Blank Nut Button Meme' title='Make Blank Nut Button Meme'></div><div class='im' style='background-position:-750px 0' data-key='15' alt='Waiting Skeleton Meme' title='Make Waiting Skeleton Meme'></div><div class='im' style='background-position:-800px 0' data-key='16' alt='Disaster Girl Meme' title='Make Disaster Girl Meme'></div><div class='im' style='background-position:-850px 0' data-key='17' alt='Y&#039;all Got Any More Of That Meme' title='Make Y&#039;all Got Any More Of That Meme'></div><div class='im' style='background-position:-900px 0' data-key='18' alt='Sad Pablo Escobar Meme' title='Make Sad Pablo Escobar Meme'></div><div class='im' style='background-position:-950px 0' data-key='19' alt='Tuxedo Winnie The Pooh Meme' title='Make Tuxedo Winnie The Pooh Meme'></div><div class='im' style='background-position:-1000px 0' data-key='20' alt='Inhaling Seagull Meme' title='Make Inhaling Seagull Meme'></div><div class='im' style='background-position:-1050px 0' data-key='21' alt='Surprised Pikachu Meme' title='Make Surprised Pikachu Meme'></div><div class='im' style='background-position:-1100px 0' data-key='22' alt='Hide the Pain Harold Meme' title='Make Hide the Pain Harold Meme'></div><div class='im' style='background-position:-1150px 0' data-key='23' alt='X, X Everywhere Meme' title='Make X, X Everywhere Meme'></div><div class='im' style='background-position:-1200px 0' data-key='24' alt='Is This A Pigeon Meme' title='Make Is This A Pigeon Meme'></div><div class='im' style='background-position:-1250px 0' data-key='25' alt='One Does Not Simply Meme' title='Make One Does Not Simply Meme'></div><div class='im' style='background-position:-1300px 0' data-key='26' alt='Trump Bill Signing Meme' title='Make Trump Bill Signing Meme'></div><div class='im' style='background-position:-1350px 0' data-key='27' alt='Epic Handshake Meme' title='Make Epic Handshake Meme'></div><div class='im' style='background-position:-1400px 0' data-key='28' alt='Ancient Aliens Meme' title='Make Ancient Aliens Meme'></div><div class='im' style='background-position:-1450px 0' data-key='29' alt='The Scroll Of Truth Meme' title='Make The Scroll Of Truth Meme'></div><div class='im' style='background-position:-1500px 0' data-key='30' alt='Monkey Puppet Meme' title='Make Monkey Puppet Meme'></div><div class='im' style='background-position:-1550px 0' data-key='31' alt='American Chopper Argument Meme' title='Make American Chopper Argument Meme'></div><div class='im' style='background-position:-1600px 0' data-key='32' alt='Marked Safe From Meme' title='Make Marked Safe From Meme'></div><div class='im' style='background-position:-1650px 0' data-key='33' alt='The Rock Driving Meme' title='Make The Rock Driving Meme'></div><div class='im' style='background-position:-1700px 0' data-key='34' alt='Spongebob Ight Imma Head Out Meme' title='Make Spongebob Ight Imma Head Out Meme'></div><div class='im' style='background-position:-1750px 0' data-key='35' alt='Oprah You Get A Meme' title='Make Oprah You Get A Meme'></div><div class='im' style='background-position:-1800px 0' data-key='36' alt='Futurama Fry Meme' title='Make Futurama Fry Meme'></div><div class='im' style='background-position:-1850px 0' data-key='37' alt='Doge Meme' title='Make Doge Meme'></div><div class='im' style='background-position:-1900px 0' data-key='38' alt='Finding Neverland Meme' title='Make Finding Neverland Meme'></div><div class='im' style='background-position:-1950px 0' data-key='39' alt='Bad Luck Brian Meme' title='Make Bad Luck Brian Meme'></div><div class='im' style='background-position:-2000px 0' data-key='40' alt='Third World Skeptical Kid Meme' title='Make Third World Skeptical Kid Meme'></div><div class='im' style='background-position:-2050px 0' data-key='41' alt='Unsettled Tom Meme' title='Make Unsettled Tom Meme'></div><div class='im' style='background-position:-2100px 0' data-key='42' alt='Who Killed Hannibal Meme' title='Make Who Killed Hannibal Meme'></div><div class='im' style='background-position:-2150px 0' data-key='43' alt='Third World Success Kid Meme' title='Make Third World Success Kid Meme'></div><div class='im' style='background-position:-2200px 0' data-key='44' alt='The Most Interesting Man In The World Meme' title='Make The Most Interesting Man In The World Meme'></div><div class='im' style='background-position:-2250px 0' data-key='45' alt='Grandma Finds The Internet Meme' title='Make Grandma Finds The Internet Meme'></div><div class='im' style='background-position:-2300px 0' data-key='46' alt='That Would Be Great Meme' title='Make That Would Be Great Meme'></div><div class='im' style='background-position:-2350px 0' data-key='47' alt='First World Problems Meme' title='Make First World Problems Meme'></div><div class='im' style='background-position:-2400px 0' data-key='48' alt='Leonardo Dicaprio Cheers Meme' title='Make Leonardo Dicaprio Cheers Meme'></div><div class='im' style='background-position:-2450px 0' data-key='49' alt='Star Wars Yoda Meme' title='Make Star Wars Yoda Meme'></div><div class='im' style='background-position:-2500px 0' data-key='50' alt='Black Girl Wat Meme' title='Make Black Girl Wat Meme'></div><div class='im' style='background-position:-2550px 0' data-key='51' alt='Evil Kermit Meme' title='Make Evil Kermit Meme'></div><div class='im' style='background-position:-2600px 0' data-key='52' alt='Hard To Swallow Pills Meme' title='Make Hard To Swallow Pills Meme'></div><div class='im' style='background-position:-2650px 0' data-key='53' alt='But That&#039;s None Of My Business Meme' title='Make But That&#039;s None Of My Business Meme'></div><div class='im' style='background-position:-2700px 0' data-key='54' alt='Don&#039;t You Squidward Meme' title='Make Don&#039;t You Squidward Meme'></div><div class='im' style='background-position:-2750px 0' data-key='55' alt='Laughing Men In Suits Meme' title='Make Laughing Men In Suits Meme'></div><div class='im' style='background-position:-2800px 0' data-key='56' alt='Who Would Win? Meme' title='Make Who Would Win? Meme'></div><div class='im' style='background-position:-2850px 0' data-key='57' alt='Evil Toddler Meme' title='Make Evil Toddler Meme'></div><div class='im' style='background-position:-2900px 0' data-key='58' alt='Y U No Meme' title='Make Y U No Meme'></div><div class='im' style='background-position:-2950px 0' data-key='59' alt='X All The Y Meme' title='Make X All The Y Meme'></div><a class='y but' id='allTemplates' tabindex='-1' href='/memetemplates' title='Blank Meme Templates'>View All Meme Templates (1,000s more...)</a></div>
+</div>
+<div class="mm-boxes"></div>
+<div class="mm-transparency-color-wrap clearfix">
+<div class="color-picker mm-transparency-color-picker"></div>
+<div class="mm-transparency-color-label">← Transparency color. Used as background since this image contains transparency. Click to change.</div>
+</div>
+<div class="mm-toggle-opts-wrap">
+<span class="mm-toggle-opts a down-arrow">More Options</span>
+<div class="mm-add-text l but sml">Add Text</div>
+</div>
+<div class="mm-opts">
+<div><div class="mm-opt">Note: font can be customized per-textbox by clicking the gear icon.</div></div>
+<div><label class="mm-opt">
+<input type="checkbox" class="mm-toggle-drag" checked />
+<span class="checkbox-text">Enable drag/drop & resize</span>
+</label></div>
+<div><label class="mm-opt">
+<input type="checkbox" class="mm-output-original-resolution" />
+<span class="checkbox-text">Use resolution of original template image, do not resize. Potentially higher quality, but larger filesize.</span>
+</label></div>
+<div><div class="mm-opt">Effect (beta):
+<div class="select">
+<select class="mm-effect">
+<option value="">None</option>
+<option value="smart_posterize">Smart Posterize (best on real photos)</option>
+<option value="meme_border">Meme Border</option>
+<option value="jpeg_degrade">JPEG Degrade</option>
+<option value="jpeg_min_quality">JPEG Min Quality</option>
+<option value="blur">Blur</option>
+<option value="sharpen">Sharpen</option>
+<option value="median_filter">Median Filter</option>
+<option value="median_filter_sharpen">Median Filter + Sharpen</option>
+</select>
+</div>
+</div></div>
+</div>
+<div class="gen-wrap">
+<div class="gen-login-wrap">
+Pro-tip: If you <span class="a show-login">Login or Join Imgflip</span>,
+your captioned memes will be saved in your account
+</div>
+<p>
+<label>
+<input type="checkbox" class="gen-private" name="private" value="1" />
+<span class="checkbox-text">Private <small>(must download image to save or share)</small></span>
+</label>
+</p>
+<p class="gen-anon-wrap">
+<label>
+<input type="checkbox" class="gen-anon" name="anon" value="1" />
+<span class="checkbox-text">
+Create Anonymously
+<span class="tip">If this is checked, your username will not be associated with this image after you create it.</span>
+</span>
+</label>
+</p>
+<p class="gen-no-watermark-wrap">
+<label>
+<input type="checkbox" class="gen-no-watermark mm-no-watermark" name="no_watermark" />
+<span class="checkbox-text">Remove "imgflip.com" watermark</span>
+</label>
+</p>
+<div class="gen-wrap-btns clearfix">
+<div class='mm-generate b but'>Generate</div> <div class="mm-reset reset l but">Reset</div>
+<div class="mm-set-default-settings l but">Save Text Box Settings</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mm-recs-wrap" class="ibox"><h2>Hot Memes Right Now <a class='mm-rec-link' href='/tag/memes'>View All Memes</a></h2><div id='mm-recs'><a href='/i/3vb9g9'><img class='mm-rec' alt='Change My Mind Meme | Snakes probably think garden hoses are statues of famous snakes | image tagged in memes,change my mind | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vb9g9.jpg' /></a><a href='/i/3vnxyk'><img class='mm-rec' alt='Grandma Finds The Internet Meme | WAIT A SECOND.
+DONKEY KONG ISNT A DONKEY. HE&#039;S AN APE | image tagged in memes,grandma finds the internet | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vnxyk.jpg' /></a><a href='/i/3vqktw'><img class='mm-rec' alt='Monkey Puppet Meme | 6 year old kid says the n-word mother: where did u hear that word FATHER | image tagged in memes,monkey puppet | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vqktw.jpg' /></a><a href='/i/3vpwdz'><img class='mm-rec' alt='Dad Joke Dog Meme | DID YOU HEAR FINLAND IS NOW CLOSING IT&#039;S BORDERS SO WHAT DOES THAT MEAN NO ONE WILL BE CROSSING THE FINISH LINE | image tagged in memes,dad joke dog | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vpwdz.jpg' /></a><a href='/i/3vsiu9'><img class='mm-rec' alt='Dad Joke Dog Meme | WHAT&#039;S THE DIFFERENCE BETWEEN DUBAI AND ABU DHABI? I DON&#039;T KNOW PEOPLE IN DUBAI DON&#039;T LIKE THE FLINTSTONES BUT PEOPLE IN ABU DHABI DOOOOOO. | image tagged in memes,dad joke dog | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vsiu9.jpg' /></a><a href='/i/3vipv0'><img class='mm-rec' alt='When All Your Daily Routines Are Thrown Out of Whack | DAY 15 OF STAY AT HOME WHAT YEAR IS IT? | image tagged in memes,what year is it,stay home,coronavirus | made w/ Imgflip meme maker' src='//i.imgflip.com/2/3vipv0.jpg' /></a></div></div>
+<div class="ibox" style="margin:20px 0">
+Bored of making memes? Try <a href="/gif-maker">making a GIF</a> instead!
+</div>
+<div id="gen-qa" class="ibox">
+<h2 class="gen-q">What is the Meme Generator?</h2>
+<p>It's a free online image maker that allows you to add custom resizable text to images.
+It operates in HTML5 canvas, so your images are created instantly on your own device.
+Most commonly, people use the generator to add text captions to established <a href="https://en.wikipedia.org/wiki/Meme">memes</a>,
+so technically it's more of a meme "captioner" than a meme maker.
+However, you can also upload your own images as templates.</p>
+<h2 class="gen-q">How can I customize my meme?</h2>
+<ul>
+<li>You can move and resize the text boxes by dragging them around. If you're on a mobile device,
+you may have to first check "enable drag/drop" in the More Options section.
+<li>You can customize the font color and outline color just to the right
+of where you type your text.
+<li>You can further customize the font and add additional text boxes in the More Options
+section. Imgflip supports all web fonts and Windows/Mac fonts including bold and italic, if they are installed on
+your device. Note that Android and other mobile operating systems may support fewer fonts.
+<li>You can rotate your meme, add scumbag hats, deal-with-it sunglasses, speech bubbles, or other custom images, and draw on your meme
+using the panel just above the meme preview image.
+<li>You can create "meme chains" of multiple images stacked vertically by adding new images with the
+"below current image" setting.
+</ul>
+<h2 class="gen-q">Can I use the generator for more than just memes?</h2>
+<p>
+Yes! The Meme Generator is a flexible tool for many purposes. By uploading custom images and using
+all the customizations, you can design many creative works including
+posters, banners, advertisements, and other custom graphics.
+</p>
+<h2 class="gen-q">Why is there an "imgflip.com" watermark on my memes?</h2>
+<p>
+The Imgflip watermark helps other people find where the meme was created, so they can make memes too!
+However, if you'd really like to, you can remove our watermark from all images you create, as well as remove ads and supercharge
+your image creation abilities, using <a href="/pro?from=mfaq_watermark">Imgflip Pro</a>
+or <span class="a mm-show-pro-basic">Imgflip Pro Basic</span>.
+</p>
+<h2 class="gen-q">Do you have a wacky AI that can write memes for me?</h2>
+<p>
+Funny you ask. Why yes, we do. Here you go:
+<a href="/ai-meme">imgflip.com/ai-meme</a> (warning, may contain vulgarity)
+</p>
+</div>
+<div id="pro-basic-popup-wrap">
+<table class="pro-table">
+<tr>
+<th style="border:none;"></th>
+<th>Free</th>
+<th><b>Pro Basic</b></th>
+</tr>
+<tr>
+<td class="pro-table-spacer" colspan="100%"></td>
+</tr>
+<tr>
+<td>Access to the biggest meme template database on the interwebz</td>
+<td class="green">Yes</td>
+<td class="green">Yes</td>
+</tr>
+<tr>
+<td>Ability to remove "imgflip.com" watermark from memes you create</td>
+<td class="red">No</td>
+<td class="green"><b>Yes</b></td>
+</tr>
+<tr>
+<td>Disable all advertisements on imgflip.com (yay faster pageloads!)</td>
+<td class="red">No</td>
+<td class="green"><b>Yes</b></td>
+</tr>
+</table>
+<div class="pro-pay-wrap">
+<div class="pro-pay-label">3.95 / month. Cancel at any time.</div>
+<div class="pro-stripe-btns">
+<div class="pro-stripe-payment-btn display-none"></div>
+<div class="pro-stripe-btn y but">Pay with Card</div>
+</div>
+<div class="pro-stripe-btn-note">
+securely
+<img class="pro-stripe-powered" src="/powered_by_stripe.png" title="Powered by Stripe" alt="Powered by Stripe" />
+</div>
+</div>
+<p>
+<p><b>Q</b>: Y U NO give us this for free instead?!?</p>
+<p><b>A</b>: We don't like bothering people with ads, and we want you to be able to support Imgflip in a way that gives you
+the best experience. Before we introduced this, there was no way to remove the watermark from memes without
+paying for the full <a href='/pro'>Imgflip Pro</a>, which is more expensive.</p>
+</p>
+</div>
+</div>
+<script>
+usermemeID=217523779;memes={"0":{"id":181913649,"uid":27,"name":"Drake Hotline Bling","w":1200,"h":1200,"file_type":"jpg","altNames":"drakeposting, drakepost, drake hotline approves, drake no yes, drake like dislike, drake faces","default_settings":"[{\"type\":\"text\",\"x\":612.2448979591837,\"y\":12.244897959183673,\"w\":575.5102040816327,\"h\":575.5102040816327,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":612.2448979591837,\"y\":612.2448979591837,\"w\":575.5102040816327,\"h\":575.5102040816327,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Drake-Hotline-Bling"},"1":{"id":112126428,"uid":0,"name":"Distracted Boyfriend","w":1200,"h":800,"file_type":"jpg","altNames":"distracted bf, guy checking out another girl, man looking at other woman, jealous girlfriend, guy looking back, cheater temptation, wandering eyes, disloyal boyfriend","default_settings":"[{\"x\":117,\"y\":502,\"w\":431,\"h\":164,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":570,\"y\":328,\"w\":320,\"h\":159,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":906,\"y\":401,\"w\":269,\"h\":205,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Distracted-Boyfriend"},"2":{"id":87743020,"uid":0,"name":"Two Buttons","w":600,"h":908,"file_type":"jpg","altNames":"2 red buttons, choice button, which button, daily struggle, hard choice to make","default_settings":"[{\"x\":56,\"y\":85,\"w\":188,\"h\":91,\"rotation\":349,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":274,\"y\":56,\"w\":144,\"h\":82,\"rotation\":352,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Two-Buttons"},"3":{"id":129242436,"uid":1495252,"name":"Change My Mind","w":482,"h":361,"file_type":"jpg","altNames":"Steven Crowder's sign, prove me wrong","default_settings":"[{\"type\":\"text\",\"x\":210.5061224489796,\"y\":214.44081632653064,\"w\":206.57142857142858,\"h\":86.56326530612246,\"rotation\":353,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#dddddd\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":141.64897959183673,\"y\":318.7102040816327,\"w\":74.7591836734694,\"h\":38.36326530612245,\"rotation\":352,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#dddddd\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Change-My-Mind"},"4":{"id":102156234,"uid":0,"name":"Mocking Spongebob","w":502,"h":353,"file_type":"jpg","altNames":"spongebob mock, spongebob chicken, retarded spongebob, sarcastic spongebob, spongebob stupid, spongebob derp, spongebob bird, spongebob mocking face","default_settings":"[{\"x\":4.09795918367347,\"y\":4.09795918367347,\"w\":492.7795918367347,\"h\":86.05714285714285,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"top\"},{\"x\":4.09795918367347,\"y\":267.39183673469387,\"w\":492.7795918367347,\"h\":70.68979591836735,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"bottom\"}]","url_name":"Mocking-Spongebob"},"5":{"id":124822590,"uid":0,"name":"Left Exit 12 Off Ramp","w":804,"h":767,"file_type":"jpg","altNames":"car drifts off highway, sharp turn on road","default_settings":"[{\"type\":\"text\",\"x\":182.13061224489797,\"y\":82.04081632653062,\"w\":132.9061224489796,\"h\":187.05306122448982,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#024646\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":424.9714285714286,\"y\":85.32244897959184,\"w\":155.8775510204082,\"h\":180.48979591836735,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#024646\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":210.02448979591838,\"y\":554.5959183673469,\"w\":447.9428571428572,\"h\":116.49795918367347,\"rotation\":353,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Left-Exit-12-Off-Ramp"},"6":{"id":438680,"uid":0,"name":"Batman Slapping Robin","w":400,"h":387,"file_type":"jpg","altNames":"","default_settings":"[{\"type\":\"text\",\"x\":13.877551020408163,\"y\":3.265306122448979,\"w\":174.6938775510204,\"h\":73.46938775510203,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":0},{\"type\":\"text\",\"x\":222.85714285714283,\"y\":4.897959183673469,\"w\":167.34693877551018,\"h\":71.83673469387755,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":0}]","url_name":"Batman-Slapping-Robin"},"7":{"id":188390779,"uid":0,"name":"Woman Yelling At Cat","w":680,"h":438,"file_type":"jpg","altNames":"Women yelling, confused cat, girl screaming at cat, angry woman yelling at cat at dinner table, lady screams at cat, woman pointing at cat, smudge the cat","default_settings":"[{\"type\":\"text\",\"x\":6.938775510204081,\"y\":6.938775510204081,\"w\":327.51020408163265,\"h\":83.13265306122449,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":349.7142857142857,\"y\":7.928571428571436,\"w\":323.3469387755102,\"h\":83.13265306122446,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"middle\"}]","url_name":"Woman-Yelling-At-Cat"},"8":{"id":131087935,"uid":0,"name":"Running Away Balloon","w":761,"h":1024,"file_type":"jpg","altNames":"big yellow ball and pink guy, me vs my hopes and dreams","default_settings":"[{\"type\":\"text\",\"x\":20.18979591836735,\"y\":319.930612244898,\"w\":329.24897959183676,\"h\":123.9897959183673,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":483.00204081632654,\"y\":84.65306122448983,\"w\":270.2326530612245,\"h\":245.12857142857138,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":6.2122448979591836,\"y\":748.969387755102,\"w\":191.0265306122449,\"h\":164.369387755102,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":251.59591836734694,\"y\":781.5836734693878,\"w\":243.83061224489796,\"h\":99.14081632653057,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":605.6938775510204,\"y\":593.6632653061225,\"w\":149.0938775510204,\"h\":184.55918367346933,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Running-Away-Balloon"},"9":{"id":217743513,"uid":0,"name":"UNO Draw 25 Cards","w":500,"h":494,"file_type":"jpg","altNames":"do something you don\u2019t like or draw 25 cards, uno dilemma, uno or draw 25, draw 25","default_settings":"[{\"type\":\"text\",\"x\":75.51020408163265,\"y\":147.9591836734694,\"w\":152.0408163265306,\"h\":102.07142857142857,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#222222\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":0},{\"type\":\"text\",\"x\":262.2448979591837,\"y\":4.1734693877551345,\"w\":232.6530612244898,\"h\":61.2551020408163,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":0}]","url_name":"UNO-Draw-25-Cards"},"10":{"id":93895088,"uid":0,"name":"Expanding Brain","w":857,"h":1202,"file_type":"jpg","altNames":"","default_settings":"[{\"x\":6.995918367346939,\"y\":6.995918367346939,\"w\":407.5122448979592,\"h\":283.33469387755105,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":6.995918367346939,\"y\":307.8204081632653,\"w\":407.5122448979592,\"h\":292.0795918367347,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":6.995918367346939,\"y\":615.6408163265306,\"w\":407.5122448979592,\"h\":260.5979591836735,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":6.995918367346939,\"y\":899.3000000000002,\"w\":407.5122448979592,\"h\":276.0142857142857,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Expanding-Brain"},"11":{"id":89370399,"uid":0,"name":"Roll Safe Think About It","w":702,"h":395,"file_type":"jpg","altNames":"thinking black guy, black guy pointing at his head, can't blank if you don't blank, smart black dude, guy tapping head","default_settings":"","url_name":"Roll-Safe-Think-About-It"},"12":{"id":222403160,"uid":0,"name":"Bernie I Am Once Again Asking For Your Support","w":750,"h":750,"file_type":"jpg","altNames":"bernie sanders commercial, bernie sanders 2020 campaign, asking for your financial support, once again bernie","default_settings":"[{\"type\":\"text\",\"x\":7.653061224489796,\"y\":50.51020408163265,\"w\":292.3469387755102,\"h\":211.98979591836735,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":0,\"font_max_size\":50},{\"type\":\"text\",\"x\":7.653061224489796,\"y\":646.6836734693877,\"w\":734.6938775510205,\"h\":83.41836734693878,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"top\",\"font_shadow\":true,\"outline_width\":0,\"font_max_size\":26}]","url_name":"Bernie-I-Am-Once-Again-Asking-For-Your-Support"},"13":{"id":1035805,"uid":0,"name":"Boardroom Meeting Suggestion","w":500,"h":649,"file_type":"jpg","altNames":"throw a guy out the boardroom window","default_settings":"[{\"x\":150,\"y\":3.061224489795918,\"w\":306.12244897959187,\"h\":56.12244897959184,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":20.408163265306122,\"y\":246.9387755102041,\"w\":108.16326530612245,\"h\":29.591836734693878,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":160.20408163265307,\"y\":255.10204081632654,\"w\":88.77551020408164,\"h\":28.571428571428573,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":300,\"y\":255.10204081632654,\"w\":146.9387755102041,\"h\":51.02040816326531,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Boardroom-Meeting-Suggestion"},"14":{"id":119139145,"uid":0,"name":"Blank Nut Button","w":600,"h":446,"file_type":"jpg","altNames":"blank blue button, smash button, press button, button slam","default_settings":"[{\"x\":6,\"y\":6,\"w\":587,\"h\":111,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":51,\"y\":210,\"w\":217,\"h\":140,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Blank-Nut-Button"},"15":{"id":4087833,"uid":0,"name":"Waiting Skeleton","w":298,"h":403,"file_type":"jpg","altNames":"skeleton waiting on bench in the park","default_settings":"","url_name":"Waiting-Skeleton"},"16":{"id":97984,"uid":1851,"name":"Disaster Girl","w":500,"h":375,"file_type":"jpg","altNames":"","default_settings":"","url_name":"Disaster-Girl"},"17":{"id":124055727,"uid":27,"name":"Y'all Got Any More Of That","w":600,"h":471,"file_type":"jpg","altNames":"Tyrone Biggums, Dave Chappelle, Chappelles Show, yall got any more of that stuff, powder lips neck scratch","default_settings":"","url_name":"Yall-Got-Any-More-Of-That"},"18":{"id":80707627,"uid":331015,"name":"Sad Pablo Escobar","w":720,"h":709,"file_type":"jpg","altNames":"pablo escobar waiting, man waiting, waiting man, lonely man, narcos waiting, narcos bored, narcos alone","default_settings":"[{\"type\":\"text\",\"x\":5.877551020408163,\"y\":245.3877551020408,\"w\":705.3061224489795,\"h\":100.84183673469389,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":5},{\"type\":\"text\",\"x\":7.346938775510204,\"y\":567.015306122449,\"w\":343.83673469387753,\"h\":122.88265306122449,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":5},{\"type\":\"text\",\"x\":368.81632653061223,\"y\":567.0994897959184,\"w\":342.3673469387755,\"h\":122.88265306122449,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":5}]","url_name":"Sad-Pablo-Escobar"},"19":{"id":178591752,"uid":2002049,"name":"Tuxedo Winnie The Pooh","w":800,"h":582,"file_type":"png","altNames":"winnie the poo, winnie the pooh drake style, classy pooh bear, tuxedo pooh, winnie the pooh elegant, winnie pooh, winnie the pooh tux, fancy pooh","default_settings":"[{\"type\":\"text\",\"x\":354.2857142857143,\"y\":8.16326530612245,\"w\":434.2857142857143,\"h\":274.2857142857143,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":354.2857142857143,\"y\":306.93877551020404,\"w\":434.2857142857143,\"h\":264.48979591836735,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Tuxedo-Winnie-The-Pooh"},"20":{"id":114585149,"uid":0,"name":"Inhaling Seagull","w":1269,"h":2825,"file_type":"jpg","altNames":"inhaling bird","default_settings":"[{\"x\":12,\"y\":12,\"w\":1243,\"h\":232,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":15,\"y\":686,\"w\":1243,\"h\":206,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":748,\"y\":1579,\"w\":486,\"h\":164,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":15,\"y\":2545,\"w\":1240,\"h\":255,\"rotation\":null,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Inhaling-Seagull"},"21":{"id":155067746,"uid":0,"name":"Surprised Pikachu","w":1893,"h":1893,"file_type":"jpg","altNames":"shocked pikachu","default_settings":"[{\"x\":27,\"y\":15,\"w\":1850,\"h\":166,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"top\"},{\"x\":27,\"y\":278,\"w\":1850,\"h\":162,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"bottom\"},{\"x\":27,\"y\":533,\"w\":1850,\"h\":166,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"middle\"}]","url_name":"Surprised-Pikachu"},"22":{"id":27813981,"uid":0,"name":"Hide the Pain Harold","w":480,"h":601,"file_type":"jpg","altNames":"sad life harold, maurice","default_settings":"[{\"type\":\"text\",\"x\":4.8979591836734695,\"y\":214.53061224489798,\"w\":470.204081632653,\"h\":86.57653061224488,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":true,\"outline_width\":5},{\"type\":\"text\",\"x\":4.8979591836734695,\"y\":512.4642857142858,\"w\":470.204081632653,\"h\":75.80102040816325,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":5}]","url_name":"Hide-the-Pain-Harold"},"23":{"id":91538330,"uid":0,"name":"X, X Everywhere","w":2118,"h":1440,"file_type":"jpg","altNames":"woody and buzz lightyear pointing, toy story, dicks everywhere, toystory everywhere","default_settings":"","url_name":"X-X-Everywhere"},"24":{"id":100777631,"uid":0,"name":"Is This A Pigeon","w":1587,"h":1425,"file_type":"jpg","altNames":"is this a pidgeon, anime butterfly guy, oblivious butterfly man anime, is this a bird","default_settings":"[{\"x\":45,\"y\":38,\"w\":806,\"h\":336,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":923,\"y\":472,\"w\":618,\"h\":281,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":16,\"y\":1159,\"w\":1554,\"h\":229,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Is-This-A-Pigeon"},"25":{"id":61579,"uid":0,"name":"One Does Not Simply","w":568,"h":335,"file_type":"jpg","altNames":"one does not simply walk into morder, lord of the rings boromir","default_settings":"","url_name":"One-Does-Not-Simply"},"26":{"id":91545132,"uid":1017800,"name":"Trump Bill Signing","w":1866,"h":1529,"file_type":"jpg","altNames":"executive order trump","default_settings":"[{\"x\":742.5918367346939,\"y\":555.9918367346938,\"w\":445.5551020408163,\"h\":601.6897959183673,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#beced9\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":1271.9265306122447,\"y\":563.6081632653061,\"w\":449.3632653061224,\"h\":456.97959183673464,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#beced3\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Trump-Bill-Signing"},"27":{"id":135256802,"uid":1586031,"name":"Epic Handshake","w":900,"h":645,"file_type":"jpg","altNames":"arm wrestling, holding hands, grasping hands, epic hand shake, black white arms agreement","default_settings":"[{\"type\":\"text\",\"x\":176.3265306122449,\"y\":33.06122448979592,\"w\":343.46938775510205,\"h\":187.3469387755102,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#00000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":false,\"outline_width\":1},{\"type\":\"text\",\"x\":20.204081632653065,\"y\":341.6326530612245,\"w\":352.6530612244898,\"h\":176.3265306122449,\"rotation\":35,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#00000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":false,\"outline_width\":1},{\"type\":\"text\",\"x\":448.16326530612247,\"y\":304.8979591836735,\"w\":365.5102040816327,\"h\":159.79591836734696,\"rotation\":-30,\"font\":\"arial\",\"font_color\":\"#ffffff\",\"outline_color\":\"#00000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\",\"font_shadow\":false,\"outline_width\":1}]","url_name":"Epic-Handshake"},"28":{"id":101470,"uid":27,"name":"Ancient Aliens","w":500,"h":437,"file_type":"jpg","altNames":"Giorgio Tsoukalos, History Channel Guy","default_settings":"","url_name":"Ancient-Aliens"},"29":{"id":123999232,"uid":27,"name":"The Scroll Of Truth","w":1280,"h":1236,"file_type":"jpg","altNames":"I've finally found it... after 15 years, nyehhh","default_settings":"[{\"x\":237.71428571428572,\"y\":707.9183673469388,\"w\":224.6530612244898,\"h\":266.44897959183675,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":650.4489795918367,\"y\":1060.5714285714287,\"w\":548.5714285714286,\"h\":117.55102040816327,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"The-Scroll-Of-Truth"},"30":{"id":148909805,"uid":0,"name":"Monkey Puppet","w":923,"h":768,"file_type":"jpg","altNames":"monkey looking away, monkey puppet avoids eye contact, hiding in plain sight, awkward look monkey","default_settings":"[{\"type\":\"text\",\"x\":9.418367346938775,\"y\":9.418367346938775,\"w\":904.1632653061225,\"h\":184.46530612244896,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"top\",\"font_shadow\":true,\"outline_width\":0,\"font_max_size\":50},{\"type\":\"text\",\"x\":9.418367346938775,\"y\":201.1489795918367,\"w\":904.1632653061225,\"h\":73.32857142857142,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":0,\"font_max_size\":50}]","url_name":"Monkey-Puppet"},"31":{"id":134797956,"uid":0,"name":"American Chopper Argument","w":640,"h":1800,"file_type":"jpg","altNames":"orange county choppers fight, american chopper hot take","default_settings":"[{\"x\":7,\"y\":231,\"w\":626,\"h\":124,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":222,\"y\":591,\"w\":410,\"h\":124,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":156,\"y\":957,\"w\":475,\"h\":119,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":5,\"y\":1298,\"w\":283,\"h\":139,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":6,\"y\":1689,\"w\":628,\"h\":94,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"American-Chopper-Argument"},"32":{"id":161865971,"uid":1766826,"name":"Marked Safe From","w":618,"h":499,"file_type":"jpg","altNames":"facebook marked safe, marked safe flag, marked safe today, facebook safe from","default_settings":"[{\"x\":4.681818181818182,\"y\":246.57575757575756,\"w\":602.3939393939394,\"h\":110.8030303030303,\"rotation\":0,\"font\":\"helvetica\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":255.72002803768962,\"y\":74.09461869219278,\"w\":137.72962730939355,\"h\":31.21212121212121,\"rotation\":351,\"font\":\"helvetica\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"bottom\"}]","url_name":"Marked-Safe-From"},"33":{"id":21735,"uid":284,"name":"The Rock Driving","w":568,"h":700,"file_type":"jpg","altNames":"","default_settings":"[{\"x\":316.45714285714286,\"y\":28.979591836734695,\"w\":239.9510204081633,\"h\":118.23673469387755,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":330.36734693877554,\"y\":261.9755102040817,\"w\":229.5183673469388,\"h\":106.64489795918368,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"The-Rock-Driving"},"34":{"id":196652226,"uid":0,"name":"Spongebob Ight Imma Head Out","w":822,"h":960,"file_type":"jpg","altNames":"Ight Imma Head Out, aight imma head out, spongebob aight, alright I'm out, spongebob getting out of chair","default_settings":"[{\"type\":\"text\",\"x\":8.387755102040815,\"y\":8.387755102040815,\"w\":805.2244897959184,\"h\":221.5469387755102,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"type\":\"text\",\"x\":8.387755102040815,\"y\":251.9632653061225,\"w\":805.2244897959184,\"h\":83.98775510204084,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\"}]","url_name":"Spongebob-Ight-Imma-Head-Out"},"35":{"id":28251713,"uid":0,"name":"Oprah You Get A","w":620,"h":465,"file_type":"jpg","altNames":"oprah giveway, oprah winfrey, oprah you get a car, everyone gets a car, you get an oprah, oprah excited","default_settings":"","url_name":"Oprah-You-Get-A"},"36":{"id":61520,"uid":0,"name":"Futurama Fry","w":552,"h":414,"file_type":"jpg","altNames":"Not sure if X or Y, Skeptical Fry","default_settings":"","url_name":"Futurama-Fry"},"37":{"id":8072285,"uid":0,"name":"Doge","w":620,"h":620,"file_type":"jpg","altNames":"Shiba Inu","default_settings":"[{\"x\":44.285714285714285,\"y\":40.48979591836735,\"w\":250.53061224489798,\"h\":53.142857142857146,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#dd00cc\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":331.51020408163265,\"y\":127.79591836734694,\"w\":232.81632653061226,\"h\":54.40816326530612,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#ff3333\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":288.48979591836735,\"y\":322.6530612244898,\"w\":222.69387755102042,\"h\":54.40816326530612,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#22ee22\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":16.448979591836736,\"y\":496,\"w\":242.9387755102041,\"h\":49.3469387755102,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#3333ff\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":372,\"y\":525.1020408163265,\"w\":222.69387755102042,\"h\":54.40816326530612,\"rotation\":0,\"font\":\"comic sans ms\",\"font_color\":\"#ff8800\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Doge"},"38":{"id":6235864,"uid":0,"name":"Finding Neverland","w":423,"h":600,"file_type":"jpg","altNames":"Johnny Depp And Little Kid Crying","default_settings":"[{\"x\":4,\"y\":155,\"w\":415,\"h\":45,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\"},{\"x\":5,\"y\":332,\"w\":413,\"h\":75,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\"},{\"x\":5,\"y\":521,\"w\":413,\"h\":68,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\"}]","url_name":"Finding-Neverland"},"39":{"id":61585,"uid":0,"name":"Bad Luck Brian","w":475,"h":562,"file_type":"jpg","altNames":"","default_settings":"","url_name":"Bad-Luck-Brian"},"40":{"id":101288,"uid":27,"name":"Third World Skeptical Kid","w":426,"h":426,"file_type":"jpg","altNames":"African skeptical child","default_settings":"","url_name":"Third-World-Skeptical-Kid"},"41":{"id":175540452,"uid":0,"name":"Unsettled Tom","w":680,"h":550,"file_type":"jpg","altNames":"tom face, concerned tom, tom and jerry, disgusted tom, surprised tom, tom staring down","default_settings":"[{\"type\":\"text\",\"x\":5.551020408163265,\"y\":6.938775510204081,\"w\":668.8979591836735,\"h\":49.95918367346939,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"top\"},{\"type\":\"text\",\"x\":5.551020408163265,\"y\":62.44897959183673,\"w\":668.8979591836735,\"h\":51.3469387755102,\"rotation\":0,\"font\":\"arial\",\"font_color\":\"#000000\",\"outline_color\":\"#ffffff\",\"force_caps\":false,\"text_align\":\"left\",\"vertical_align\":\"bottom\"}]","url_name":"Unsettled-Tom"},"42":{"id":135678846,"uid":0,"name":"Who Killed Hannibal","w":1280,"h":1440,"file_type":"jpg","altNames":"Eric Andre shooting Hannibal Buress, why would they do this","default_settings":"[{\"x\":626,\"y\":423,\"w\":535,\"h\":232,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":60,\"y\":536,\"w\":498,\"h\":177,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":449,\"y\":1193,\"w\":820,\"h\":216,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Who-Killed-Hannibal"},"43":{"id":101287,"uid":27,"name":"Third World Success Kid","w":500,"h":500,"file_type":"jpg","altNames":"happy african child, african kids dancing","default_settings":"","url_name":"Third-World-Success-Kid"},"44":{"id":61532,"uid":0,"name":"The Most Interesting Man In The World","w":550,"h":690,"file_type":"jpg","altNames":"I dont always... but when I do, Dos Equis Man, I don't always","default_settings":"","url_name":"The-Most-Interesting-Man-In-The-World"},"45":{"id":61556,"uid":0,"name":"Grandma Finds The Internet","w":640,"h":480,"file_type":"jpg","altNames":"","default_settings":"","url_name":"Grandma-Finds-The-Internet"},"46":{"id":563423,"uid":0,"name":"That Would Be Great","w":526,"h":440,"file_type":"jpg","altNames":"Bill Lumbergh, office space, yea that'd be great","default_settings":"[{\"type\":\"text\",\"x\":5.36734693877551,\"y\":5.36734693877551,\"w\":515.265306122449,\"h\":79.94285714285714,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"top\",\"font_shadow\":true,\"outline_width\":5,\"font_max_size\":50},{\"type\":\"text\",\"x\":5.36734693877551,\"y\":316.0448979591837,\"w\":515.265306122449,\"h\":110,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\",\"font_shadow\":true,\"outline_width\":5,\"font_max_size\":50}]","url_name":"That-Would-Be-Great"},"47":{"id":61539,"uid":0,"name":"First World Problems","w":552,"h":367,"file_type":"jpg","altNames":"fwp, woman crying","default_settings":"","url_name":"First-World-Problems"},"48":{"id":5496396,"uid":0,"name":"Leonardo Dicaprio Cheers","w":600,"h":400,"file_type":"jpg","altNames":"The Great Gatsby party with Jay Gatsby","default_settings":"","url_name":"Leonardo-Dicaprio-Cheers"},"49":{"id":14371066,"uid":0,"name":"Star Wars Yoda","w":620,"h":714,"file_type":"jpg","altNames":"master yoda","default_settings":"","url_name":"Star-Wars-Yoda"},"50":{"id":14230520,"uid":0,"name":"Black Girl Wat","w":599,"h":626,"file_type":"jpg","altNames":"confused black girl, black girl with hand out, seriously black girl","default_settings":"","url_name":"Black-Girl-Wat"},"51":{"id":84341851,"uid":0,"name":"Evil Kermit","w":700,"h":325,"file_type":"jpg","altNames":"kermit me to me, kermit inner me, sith kermit, kermit dark side","default_settings":"[{\"x\":4.285714285714286,\"y\":4.285714285714286,\"w\":405.7142857142857,\"h\":64.28571428571429,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"top\"},{\"x\":230.00000000000003,\"y\":235.71428571428572,\"w\":464.28571428571433,\"h\":80,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"bottom\"}]","url_name":"Evil-Kermit"},"52":{"id":132769734,"uid":0,"name":"Hard To Swallow Pills","w":680,"h":979,"file_type":"jpg","altNames":"hard pills to swallow","default_settings":"[{\"x\":111,\"y\":557,\"w\":424,\"h\":160,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":15,\"y\":737,\"w\":234,\"h\":121,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Hard-To-Swallow-Pills"},"53":{"id":16464531,"uid":0,"name":"But That's None Of My Business","w":600,"h":600,"file_type":"jpg","altNames":"Kermit the frog, kermit drinking lipton iced tea","default_settings":"","url_name":"But-Thats-None-Of-My-Business"},"54":{"id":101511,"uid":2076,"name":"Don't You Squidward","w":500,"h":333,"file_type":"jpg","altNames":"spongebob grinning, spongebob smirk face, smug spongebob","default_settings":"","url_name":"Dont-You-Squidward"},"55":{"id":922147,"uid":0,"name":"Laughing Men In Suits","w":500,"h":333,"file_type":"jpg","altNames":"Men laughing, And then I said, And then I told them, rich men laughing","default_settings":"","url_name":"Laughing-Men-In-Suits"},"56":{"id":101910402,"uid":558216,"name":"Who Would Win?","w":802,"h":500,"file_type":"jpg","altNames":"","default_settings":"[{\"x\":9.820408163265306,\"y\":96.5673469387755,\"w\":394.4530612244898,\"h\":114.57142857142857,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"},{\"x\":427.1877551020408,\"y\":96.5673469387755,\"w\":361.71836734693875,\"h\":114.57142857142857,\"rotation\":0,\"font\":\"impact\",\"font_color\":\"#ffffff\",\"outline_color\":\"#000000\",\"force_caps\":true,\"text_align\":\"center\",\"vertical_align\":\"middle\"}]","url_name":"Who-Would-Win"},"57":{"id":235589,"uid":0,"name":"Evil Toddler","w":500,"h":332,"file_type":"jpg","altNames":"evil baby","default_settings":"","url_name":"Evil-Toddler"},"58":{"id":61527,"uid":0,"name":"Y U No","w":500,"h":500,"file_type":"jpg","altNames":"","default_settings":"","url_name":"Y-U-No"},"59":{"id":61533,"uid":0,"name":"X All The Y","w":500,"h":355,"file_type":"jpg","altNames":"all the things","default_settings":"","url_name":"X-All-The-Y"},"U":{"id":217523779,"uid":0,"name":"Source code","w":2560,"h":1440,"file_type":"jpg","approved":2,"url_name":"","altNames":"","safe_for_work":"unknown","default_settings":""}};sfw=0;initMeme='U';quickAddImgs=[{"id":"176385779","file_type":"png","name":"Speech Bubble Oval Left Bottom"},{"id":"176385976","file_type":"png","name":"Scumbag Hat"},{"id":"176385132","file_type":"png","name":"Deal With It Sunglasses Original"},{"id":"171546160","file_type":"png","name":"Imgflip Upvote"},{"id":"171545779","file_type":"png","name":"Imgflip Downvote"}];quickTransImgs=[{"id":"209284565","file_type":"png","name":"glasses"},{"id":"199166218","file_type":"png","name":"Gun"},{"id":"197737357","file_type":"png","name":"Edit the eye"},{"id":"197438398","file_type":"png","name":"Minecraft helmet"},{"id":"209372052","file_type":"png","name":"Cigarette"},{"id":"170698162","file_type":"png","name":"Speech Bubble"},{"id":"192716610","file_type":"png","name":"Teardrop"},{"id":"197863345","file_type":"png","name":"Trump face"},{"id":"193369398","file_type":"png","name":"Thought Bubble Transparent"},{"id":"215162316","file_type":"png","name":"Heart"},{"id":"231628486","file_type":"png","name":"Toilet paper"},{"id":"194909827","file_type":"png","name":"Bad Time Sans"},{"id":"209285043","file_type":"png","name":"chain"},{"id":"214111683","file_type":"png","name":"speech bubble transparent"},{"id":"176993754","file_type":"png","name":"Minecraft Creeper"}];streamIsPrivate=false;</script>
+<div id="footer">
+<div id="footer-nav">
+<a href="/pro?from=footer">Imgflip Pro</a>
+<a href="/gif-maker">GIF Maker</a>
+<a href="/memegenerator">Meme Generator</a>
+<a href="/memetemplates">Blank Meme Templates</a>
+<a href="/user-meme-templates">User Meme Templates</a>
+<a href="/gif-templates">GIF Templates</a>
+<a href="/chart-maker">Chart Maker</a>
+<a href="/demotivational-maker">Demotivational Maker</a>
+<a href="/image-cropper">Image Cropper</a>
+<a href="/about">About</a>
+<a href="/privacy">Privacy</a>
+<a href="/terms">Terms</a>
+<a href="//api.imgflip.com">API</a>
+<a href="/slack">Slack App</a>
+<a href="/request_removal">Request Image Removal</a>
+</div>
+<div id="findUs">
+<a id="on-fb" href="https://www.facebook.com/imgflip">Facebook</a>
+<a id="on-tw" href="https://twitter.com/imgflip">Twitter</a>
+</div>
+<div id="footline">Empowering creativity on teh interwebz<br />Imgflip LLC 2020</div>
+</div>
+<div class="feedback feedback-open" data-from="global" title="Submit feedback about the site">Feedback</div>
+<!--[if lt IE 9]>
+<script src="https://s.imgflip.com/jq-old.js"></script>
+<![endif]--><!--[if gte IE 9]><!-->
+<script src="https://s.imgflip.com/jq.js"></script>
+<![endif]-->
+<script src='//s.imgflip.com/v1036/common.js'></script>
+<script src='//s.imgflip.com/v1036/Slider.js'></script><script src='//s.imgflip.com/v1036/m.js'></script><script async src='//s.imgflip.com/v1036/ImageCropper.js'></script><script async src='//s.imgflip.com/v1036/pro.js'></script><script>
+	lzs('//s.imgflip.com/v1036/ImageCropper.css');
+	lzs('//s.imgflip.com/v1036/pro.css');
+	$(function(){
+
+mm = new MemeMaker(memes, quickAddImgs, quickTransImgs, {
+	selectCallback: ajaxUpdateRecommendedMemes,
+	allowBoxRotation: true,
+	numTexts: 2
+});
+mm.init();
+mm.initPopMemes();
+mm.select(initMeme);
+
+		webkitWarn("Imgflip Meme Generator");
+		memeInit();
+	});
+</script>
+</body>
