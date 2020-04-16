@@ -1,6 +1,0 @@
-Kesimpulan dari feedback user :
-
-Untuk mini project kami buat secara garis besar sudah cukup bagus untuk digunakan 
-namun terdapat beberapa fitur yang masih kurang jika digunakan oleh orang awam 
-karena tidak ada fitur "cara menggunakan meme generator atau fitur help" 
-untuk membantu user dalam menggunakannya juga atau sedikit introduction tentang meme generator
