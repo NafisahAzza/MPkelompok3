@@ -1,2 +1,4 @@
 Interview User :
-Kami melakukan testing user mini project kami, kami meminta bantuan dari salah satu mahasiswa sistem informasi bernama Mas Tian untuk menilai dan memberikan feedback untuk mini project kami
+Kami melakukan testing user mini project kami,
+kami meminta bantuan dari salah satu mahasiswa 
+sistem informasi bernama Mas Tian untuk menilai dan memberikan feedback untuk mini project kami
